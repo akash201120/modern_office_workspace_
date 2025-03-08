@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "../components/navbar";
-import Sidebar from "../components/sidebar";
+import Navbar from "../components/Navbar";
+import Sidebar from "../components/Sidebar";
 import CreateTaskForm from "../components/CreateTaskForm";
 import { getTasks, updateTask, deleteTask } from "../services/taskService";
 
