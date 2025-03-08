@@ -4,9 +4,8 @@
   "main": "server.js",
   "scripts": {
     "dev": "nodemon backend/server.js",
-    "build":"npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
     "start": "nodemon backend/server.js"
-
   },
   "keywords": [],
   "author": "",
@@ -17,7 +16,6 @@
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
-    "crypto": "^1.0.1",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",

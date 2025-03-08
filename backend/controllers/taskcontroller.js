@@ -1,5 +1,4 @@
 import Task from "../models/taskModel.js";
-import User from "../models/userModel.js";
 
 /* ==========================
    🔹 GET ALL TASKS (Admin Only)

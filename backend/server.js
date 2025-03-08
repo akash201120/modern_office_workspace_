@@ -10,6 +10,7 @@ import path from "path";
 
 
 
+
 const app = express();
 
 dotenv.config()
@@ -19,6 +20,7 @@ app.use(cors({
   }));
 
   const _dirname = path.resolve();
+
 
 const PORT = process.env.PORT || 5000;
 
@@ -31,9 +33,9 @@ app.use("/api/tasks", taskRoutes);
 app.use("/api/staffs", staffRoutes);
 
 app.use(express.static(path.join(_dirname, "/frontend/dist")));
-app.get('*',(_,res) => {
+app.get('*', (_,res) => {
   res.sendFile(path.resolve(_dirname, "frontend", "dist", "index.html"));
-});
+})
 
 
 app.listen(PORT,() =>{
