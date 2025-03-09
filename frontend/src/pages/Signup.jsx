@@ -18,7 +18,7 @@ const Signup = () => {
     setMessage(null);
 
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/signup", {
+      const response = await axios.post("https://modern-office-workspace-hrv9.onrender.com/api/auth/signup", {
         name,
         email,
         password,

@@ -15,7 +15,7 @@ const app = express();
 
 dotenv.config()
 app.use(cors({
-    origin: "http://localhost:5173",  // Replace with your frontend URL
+    origin: "https://modern-office-workspace-hrv9.onrender.com",  // Replace with your frontend URL
     credentials: true,
   }));
 

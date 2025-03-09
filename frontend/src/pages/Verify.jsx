@@ -20,7 +20,7 @@ export default function Verify() {
   const handleVerify = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/verify-email", { 
+      const response = await axios.post("https://modern-office-workspace-hrv9.onrender.com/api/auth/verify-email", { 
         email, 
         verificationToken: code 
       });

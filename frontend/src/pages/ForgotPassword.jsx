@@ -13,7 +13,7 @@ const ForgotPassword = () => {
   const handleForgotPassword = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/forgot-password", { email });
+      const response = await axios.post("https://modern-office-workspace-hrv9.onrender.com/api/auth/forgot-password", { email });
 
       if (response.data.success) {
         toast.success("Password reset email sent!");
