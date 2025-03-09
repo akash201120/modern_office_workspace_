@@ -11,7 +11,7 @@ export default function Staffs() {
   useEffect(() => {
     const fetchStaff = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/staffs");
+        const response = await axios.get("https://modern-office-workspace-hrv9.onrender.com/api/staffs");
         setStaff(response.data);
       } catch (error) {
         setError("Error fetching staff data");

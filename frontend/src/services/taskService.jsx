@@ -24,7 +24,7 @@ export const createTask = async (taskData, token) => {
 export const getTasks = async (token) => {
     console.log("📥 Fetching tasks...");
     try {
-        const response = await fetch('http://localhost:5000/api/tasks/', {
+        const response = await fetch('https://modern-office-workspace-hrv9.onrender.com/api/tasks/', {
             method: 'GET',
             headers: {
                 'Authorization': token ? `Bearer ${token}` : '',
@@ -48,7 +48,7 @@ export const updateTask = async (taskId, updatedData, token) => {
 
         const { title, description, assignedTo, dueDate, status } = updatedData;
 
-        const response = await fetch(`http://localhost:5000/api/tasks/${taskId}`, {
+        const response = await fetch(`https://modern-office-workspace-hrv9.onrender.com/api/tasks/${taskId}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ export const updateTask = async (taskId, updatedData, token) => {
 // ❌ Delete Task
 export const deleteTask = async (taskId, token) => {
     try {
-        const response = await fetch(`http://localhost:5000/api/tasks/${taskId}`, {
+        const response = await fetch(`https://modern-office-workspace-hrv9.onrender.com/api/tasks/${taskId}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': token ? `Bearer ${token}` : '',
