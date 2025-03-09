@@ -1,4 +1,4 @@
-import Task from "../models/taskModel.js";
+import Task from "../models/taskmodel.js";
 
 /* ==========================
    🔹 GET ALL TASKS (Admin Only)
